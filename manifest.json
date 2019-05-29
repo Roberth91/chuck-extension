@@ -1,0 +1,20 @@
+{
+    "name": "My extension",
+    "version": "0.1",
+    "description": "Generates a random Chuck Norris fact",
+    "manifest_version": 2,
+    "permissions": [
+        "https://api.chucknorris.io/*"
+    ],
+    "browser_action": {
+        "default_popup": "popup.html",
+        "default_icon": {
+            "32": "images/chuck-32.png",
+            "128": "images/chuck-180.png"
+        }
+    },
+    "icons": {
+        "32": "images/chuck-32.png",
+        "128": "images/chuck-180.png"
+    }
+}

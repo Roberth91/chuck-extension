@@ -1,0 +1,56 @@
+ /* chrome-extension://__MSG_@@extension_id__/ */
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 300px;
+    font-size: 14px;
+    font-family: 'Trebuchet', sans-serif;
+    background: #FFF;
+    color: #0c0c0c;
+    -webkit-font-smoothing: antialiased;
+}
+
+body::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 53%;
+    left: 64%;
+    width: 200%;
+    height: 200%;
+    transform: translate(-50%, 0) rotate(40deg);
+    transform-origin: 50% 0;
+    background: linear-gradient(to left,#eee,#eee 50%,#f4f4f4 50%,#f4f4f4 100%);
+    z-index: 0;
+}
+
+.tool {
+    position: relative;
+    z-index: 1;
+    padding: 20px;
+}
+
+.fact {
+    margin-top: 10px;
+}
+
+h1 {
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+.next {
+    border-radius: 8px;
+    background: #0c0c0c;
+    color: #FFF;
+    position: relative;
+    padding: 5px 10px;
+    cursor: pointer;
+    background: #ff585d;
+    box-shadow: none;
+    opacity: 1;
+}
